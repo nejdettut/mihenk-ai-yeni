@@ -32,7 +32,7 @@ export default function AnalysisTool({ examId, studentId }: { examId: string, st
   return (
     <div className="bg-white p-6 rounded-2xl shadow-lg">
       <input type="file" onChange={(e) => setFile(e.target.files?.[0] || null)} className="mb-4 block w-full text-sm text-gray-500" />
-      <button 
+      <button
         onClick={handleUpload}
         disabled={loading}
         className={`w-full py-3 rounded-xl font-bold text-white ${loading ? 'bg-gray-400' : 'bg-indigo-600 hover:bg-indigo-700'}`}>
