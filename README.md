@@ -9,8 +9,8 @@ Quick start (development):
 cd backend
 python -m venv .venv
 . .venv/Scripts/Activate.ps1  # Windows PowerShell
-pip install -r requirements.txt
-cp .env.example .env
+pip install -r requirements.txt# Note: if you plan to use RAG endpoints with document extraction, install textract manually
+# as it can fail to build on some platforms: `pip install textract`cp .env.example .env
 # edit .env to set keys (or set TEST_MODE=1 for local testing)
 uvicorn app.main:app --reload --port 8001
 ```

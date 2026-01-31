@@ -8,6 +8,7 @@ google-generativeai
 python-multipart
 groq
 reportlab
-textract
+# textract is optional (can cause install issues on some platforms). Install manually if using RAG endpoints:
+# pip install textract
 openai
 langchain
